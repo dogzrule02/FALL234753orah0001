@@ -1,0 +1,11 @@
+Package: FALL234753orah0001
+Type: Package
+Title: MATH4753 Lab Functions
+Version: 0.1.0
+Author: Gavin Orahood
+Maintainer: Gavin Orahood <gavin.j.orahood-1@ou.edu>
+Description: Functions from Fall semester MATH4753.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3

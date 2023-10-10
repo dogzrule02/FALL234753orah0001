@@ -1,13 +1,14 @@
 #' Mycurve
 #'
-#' @param mu
-#' @param sigma
-#' @param a
+#' @param mu  mean
+#' @param sigma standard deviation
+#' @param a area
 #'
 #' @return Probablity
 #' @export
 #'
 #' @examples
+#' myncurve(10,2,4)
 myncurve = function(mu, sigma,a){
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma),
         xcurve <- seq(0,a, length =1000),

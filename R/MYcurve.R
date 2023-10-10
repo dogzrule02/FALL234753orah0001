@@ -19,4 +19,4 @@ myncurve = function(mu, sigma,a){
         text(x=2.15, y=0.025, paste("Area = ", area, sep= " ")))
 }
 
-myncurve(10, 2, 4)
+FALL234753orah0001::

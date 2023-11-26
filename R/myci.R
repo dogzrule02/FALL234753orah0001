@@ -2,7 +2,7 @@
 #'
 #' @param x data
 #'
-#' @return
+#' @return confidence interval of a data set put in.
 #' @export
 #'
 #' @examples

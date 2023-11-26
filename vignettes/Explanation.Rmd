@@ -1,0 +1,44 @@
+---
+title: "what the package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{what the package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>", 
+)
+```
+
+
+# Functions
+
+## Function 1
+```{r}
+FALL234753orah0001::Chebyshev(2)
+```
+This function applies the chebyshev rule to any number that you put. 
+
+## Function 2
+```{r}
+FALL234753orah0001::myfun(2)
+```
+
+This function takes a number and squares it and adds 20 to it.
+
+## Function 3
+```{r}
+FALL234753orah0001::myci(c(2,4,5,5,6))
+```
+This function takes any vector data and creates a confidence interval for the t.test.
+
+## Function 4
+
+```{r}
+result<-FALL234753orah0001::ntickets(200, 0.05, 0.6)
+result
+```
+

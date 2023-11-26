@@ -19,7 +19,7 @@ ntickets <- function(N, gamma, p)
 
     # Binomial Graph
     fun <- 1 - gamma - pbinom(N, n, p)
-    plot(n, fun, type = 'b', col = 'steel blue', cex = 0.6, xlab = 'n', ylab = 'Objective', ylim = c(-0.1, 1))
+    print(plot(n, fun, type = 'b', col = 'steel blue', cex = 0.6, xlab = 'n', ylab = 'Objective', ylim = c(-0.1, 1)))
     abline(h = 0, col = 'blue')
 
     # Find where our Function is 0
@@ -35,7 +35,7 @@ ntickets <- function(N, gamma, p)
     # Approximate to the normal
     n = as.numeric(as.character(n))
     fun2 = 1 - gamma - pnorm(N + 0.5, (n * p), sqrt(n * p * (1 - p)))
-    plot(n, fun2, type = 'l', col = 'forest green', xlab = 'n', ylab = 'Objective', ylim = c(-0.1, 1), cex = 0.6)
+    print(plot(n, fun2, type = 'l', col = 'forest green', xlab = 'n', ylab = 'Objective', ylim = c(-0.1, 1), cex = 0.6))
     abline(h = 0, col = 'brown')
 
     # Find where function 2 is 0
@@ -49,7 +49,7 @@ ntickets <- function(N, gamma, p)
     title(main = paste0('Objective vs. n and Optimal Tickets Sold \n (', ticks2, '). gamma = ', gamma, ' N = normal'), cex.main = 0.7)
 
     # Return Results
-    list(nd = ticks, nc = ticks2, N = n, gamma = gamma, p = p)
+    return(list(nd = ticks, nc = ticks2, N = n, gamma = gamma, p = p))
   }
 
 ntickets(400,0.02, 0.95)

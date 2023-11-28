@@ -40,9 +40,9 @@ This function takes any vector data and creates a confidence interval for the t.
 
 ## Function 4
 
-```{r}
-result<-FALL234753orah0001::ntickets(200, 0.05, 0.6)
+```{r, fig.show='hold'}
+result<-FALL234753orah0001::ntickets(200, 0.05, 0.95)
 result
 ```
-
+This function creates two plots that will show the appropriate amount of tickets to sell given certain parameters. It also returns a list of the values. 
 
